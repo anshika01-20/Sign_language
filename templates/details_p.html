@@ -1,0 +1,163 @@
+{% include "header.html" %}
+
+        <!--Start Projects Details Page-->
+        <section class="projects-details-page">
+            <div class="container">
+                <div class="projects-details-page__inner">
+                    <div class="projects-details-page-img">
+                        <img src="{{ url_for('static', filename='images/home/slr.svg') }}" alt="Logo" />
+                    </div>
+
+                    <div class="projects-details-page-text1">
+                        <h2>Project Overview</h2>
+                        <p>This project aims to develop an AI-powered system to recognize sign language gestures and translate them into text and speech. Our goal is to bridge the communication gap between individuals who use sign language and those who do not, promoting inclusivity and accessibility..</p>
+                    </div>
+                    <div class="projects-details-page-text1"></div>
+                        <h2>Problem Statement</h2>
+                        <p>Sign language users face communication barriers in various settings, such as healthcare, education, and daily social interactions. This project focuses on leveraging AI technology to provide a real-time translation system that can interpret sign language into readable text and audible speech.</p>
+                    </div>
+
+                    <div class="projects-details-page-text2">
+                        <h2>The challenge Project</h2>
+                        <p>Data Augmentation: Collecting enough data for accurate recognition was challenging, especially for certain gestures. <br>
+                            Real-Time Processing: Optimizing the system for real-time performance required significant model tuning and backend integration. <br>
+                            Multiple Sign Language Support: Implementing support for different sign languages (ASL and ISL) involved training separate models and managing their integration.</p>
+                    </div>
+
+                    <div class="projects-details-page-text3">
+                        <div class="row">
+                            <div class="col-xl-7">
+                                
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="content-box">
+                                    <h2>Methodology</h2>
+                                    <p>we are creating a Ai Powered Sign language Recognition Project in six steps:</p>
+
+                                    <div class="projects-details-page-text3-list">
+                                        <ul class="row">
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Data Collection</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Data Preprocessing</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Model Development</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Model Integration</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Testing And Validation</p>
+                                                </div>
+                                            </li>
+
+                                            <li class="col-xl-4 col-lg-4 col-md-4">
+                                                <div class="projects-details-page-text3-list-single">
+                                                    <div class="icon-box">
+                                                        <span class="icon-checked"></span>
+                                                    </div>
+                                                    <p>Deployment</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p><b>1. Data Collection:</b> <br>We collected datasets for various sign language gestures, focusing on ASL (American Sign Language) and ISL (Indian Sign Language).</p>
+                                    <p><b>2. Data Preprocessing:</b> <br>Resizing Images: Ensuring uniformity in the dimensions of gesture images. <br>
+                                        Augmentation: Enhancing the dataset by rotating, flipping, and adjusting brightness. <br>
+                                        Splitting the Data: Dividing the dataset into training, validation, and testing sets for robust model training.</p>
+                                    <p><b>3. Model Development:</b> <br> Using TensorFlow and Keras, we built a Convolutional Neural Network (CNN) model. The model was trained to accurately recognize and classify hand gestures from the preprocessed dataset.</p>
+                                    <p><b>4. Model Integration:</b> <br> We integrated the trained model into the web application using Flask. The backend processes live video input, runs the model inference, and sends the recognized gesture to the frontend for display and speech conversion.</p>
+                                    <p><b>5. Testing & Validation:</b> <br>The system was rigorously tested with both ASL and ISL gestures. We evaluated the model's accuracy and made performance optimizations for real-time recognition.</p>
+                                    <p><b>6. Deployment:</b> <br>The application was deployed on PythonAnywhere, allowing users to access the system through a web browser. We optimized the system to handle real-time gesture recognition efficiently.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-details-page-text4">
+                        <h2>The Result of Project</h2>
+                        <p>Achieved a recognition accuracy of [percentage] on the test dataset. <br>
+                            Successfully translated recognized gestures into text and speech in real-time. <br>
+                            The model supports multiple sign languages (ASL and ISL). <br>
+                            The system was tested with a user group and provided satisfactory results in terms of user experience. <br></p>
+                    </div>
+                    <div class="projects-details-page-text4">
+                        <h2>The Future Scope of our Project</h2>
+                        <p>Add support for more sign languages. <br>
+                            Improve the model’s accuracy and speed. <br>
+                            Develop a mobile application version for wider accessibility. <br>
+                            Include additional features such as gesture-to-PDF conversion for documentation.</p>
+                    </div>
+                    <div class="projects-details-page-text4"></div>
+                        <h2>Conclusion</h2>
+                        <p>This project demonstrates the potential of AI in solving real-world communication barriers. Our AI-powered Sign Language Recognition System successfully recognizes sign language gestures and translates them into text and speech, helping bridge the gap between sign language users and non-users. We are proud of the progress we’ve made and excited about the future developments that can further enhance accessibility and inclusivity.</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!--End Projects Details Page-->
+
+
+
+
+
+
+
+        <!--Start Slogan Style3-->
+        <section class="slogan-style3">
+            <div class="shape1 wow slideInDown animated" data-wow-delay="00ms" data-wow-duration="3000ms">
+                <img class="float-bob-y" src="assets/images/shapes/slogan-style3-shape1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="slogan-style3__inner">
+                    <div class="slogan-style3__content">
+                        <h2>Get the project Code</h2>
+                        
+                    </div>
+
+                    <div class="slogan-style3__btn">
+                        <a class="btn-one" href="https://github.com/anshika20-02/FInal_sign__">
+                            <span class="txt">
+                                Github Link
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Slogan Style3-->
+
+        {% include "footer.html" %}

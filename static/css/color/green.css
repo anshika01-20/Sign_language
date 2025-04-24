@@ -1,0 +1,18 @@
+:root {
+    --thm-base: #95c41f;
+    --thm-base-rgb: 149, 196, 31;
+}
+
+
+.logo-box-style1 a img {
+    filter: grayscale(1);
+}
+
+.experience-box__inner-content {
+    background-color: #79a40d;
+}
+
+.footer-logo-style1 a img {
+    filter: sepia(100%);
+    -webkit-filter: sepia(100%);
+}

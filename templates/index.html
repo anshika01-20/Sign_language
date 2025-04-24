@@ -1,0 +1,71 @@
+{% include "header.html" %}
+
+  <!--Main Slider Start-->
+  <section class="main-slider main-slider-style1">
+    <div class="main-slider-style1__shape-bg"
+        style="background-image: url('{{ url_for('static', filename='assets/images/shapes/main-slider-style1-clouds-bg.png') }}');"></div>
+    <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+            "effect": "fade",
+            "speed": 2000,
+            "pagination": {
+            "el": "#main-slider-pagination",
+            "type": "bullets",
+            "clickable": true
+            },
+            "navigation": {
+            "nextEl": "#main-slider__swiper-button-next",
+            "prevEl": "#main-slider__swiper-button-prev"
+            },
+            "autoplay": {
+            "delay": 8000
+            }
+        }'>
+        <div class="swiper-wrapper">
+            <!--Start Single Swiper Slide-->
+            <div class="swiper-slide">
+                <div class="image-layer" style="background-image: url('{{ url_for('static', filename='assets/images/home/main.jpg') }}');">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-slider-content">
+                                <div class="main-slider-content__inner">
+                                    <div class="big-title">
+                                        <h2>
+                                            Welcome to SIGN LANGUAGE<br> RECOGNITION SYSTEM!!
+                                        </h2>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            "It's the bridge the communication gap between individuals <br> who use sign language and those who don’t."
+                                        </p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a class="btn-one" href="{{ url_for('isl') }}">
+                                            <span class="txt">
+                                                Let's Talk with sign
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Swiper Slide-->
+        </div>
+    </div>
+</section>
+<!--Main Slider End-->
+
+       
+
+        
+        {% include "footer.html" %}
+        
+        
+
+       
+       
+       

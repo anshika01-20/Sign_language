@@ -1,0 +1,241 @@
+{% include "header.html" %}
+
+
+        <!--Start About style1-->
+        <section class="about-style1 about-style1--about-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="about-style1__img-box">
+                            <div class="inner">
+                                <img src="{{ url_for('static', filename='assets/images/home/about1.jpg') }}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-xl-7">
+                        <div class="about-style1__content-box">
+                            <div class="sec-title title-anim">
+                                <div class="sub-title">
+                                    <h4>About Sign Language</h4>
+                                </div>
+                                <h2> "Breaking Barriers, Connecting Worlds  <br>
+                                    Through Sign Language Recognition"</h2>
+                                   
+                            </div>
+                            <div class="about-style1__content-box-inner">
+                                <p>At Sign Language Recognition System, we’re transforming the way people communicate by using AI-powered sign language recognition. Our platform translates sign language gestures into text and speech in real-time, making interactions between sign language users and non-signers seamless.
+
+                                    Driven by cutting-edge technology, our mission is to bridge the communication gap, fostering inclusivity and understanding. We’re committed to empowering the deaf and hard-of-hearing communities, while continuously improving and expanding our system to meet diverse needs. Join us in building a world where everyone can connect effortlessly.</p>
+                               
+                                <div class="btn-box">
+                                    <a class="btn-one" href="{{ url_for('details') }}">
+                                        <span class="txt">
+                                            learn more
+                                        </span>
+                                    </a>
+                                    <!-- <div class="video-gallery-style1">
+                                        <div class="video-gallery-style1__inner">
+                                            <div class="icon wow zoomIn animated" data-wow-delay="300ms"
+                                                data-wow-duration="1500ms">
+                                                <div class="icon-bg"></div>
+                                                <a class="video-popup" title="Video Gallery"
+                                                    href="https://www.youtube.com/watch?v=06dV9txztKY">
+                                                    <span class="icon-play"></span>
+                                                </a>
+                                            </div>
+                                            <p>Watch Intro Video</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End About style1-->
+
+
+        <!--Start Features style4-->
+        <section class="features-style4">
+            <div class="shape1 float-bob-y"><img src="assets/images/shapes/features-v4-shape1.png" alt=""></div>
+            <div class="container">
+                <div class="sec-title title-anim text-center">
+                    <h2>Features & benefits</h2>
+                    <div class="sub-title">
+                        <h4>We propose an AI-powered Sign Language Recognition System that can bridge the communication gap between individuals who use sign language and those who don’t.
+                        <br> This system will:</h4>
+                    </div>
+                    
+                </div>
+
+                <ul class="row filter-layout masonary-layout">
+                    <li class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-features-style4">
+                            
+                            <div class="text-box">
+                                <div class="inner-title">
+                                    <h3>Real-Time Gesture Recognition.
+                                    </h3>
+                                    <div class="border-box"></div>
+                                </div>
+                                <p>Instantly translates sign language gestures into text and speech for seamless communication.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-features-style4">
+                            
+                            <div class="text-box">
+                                <div class="inner-title">
+                                    <h3>Audio Output for Signs</h3>
+                                    <div class="border-box"></div>
+                                </div>
+                                <p>Converts recognized signs into spoken words, allowing non-signers to easily understand and respond.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-features-style4">
+                           
+                            <div class="text-box">
+                                <div class="inner-title">
+                                    <h3>PDF Output</h3>
+                                    <div class="border-box"></div>
+                                </div>
+                                <p>Provides an option to export the recognized signs and their translations into a PDF file for later reference, documentation, or sharing..</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="single-features-style4">
+                           
+                            <div class="text-box">
+                                <div class="inner-title">
+                                    <h3>Support for Multiple Sign Languages</h3>
+                                    <div class="border-box"></div>
+                                </div>
+                                <p>Our system supports a variety of sign languages, including American Sign Language (ASL) and Indian Sign Language (ISL).</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+        <!--End Features style4-->
+
+        <!--Start Company History Style1 -->
+        <section class="company-history-style1">
+            <div class="container">
+                <div class="sec-title title-anim text-center">
+                    <div class="sub-title">
+                        <h4>About How Can Create</h4>
+                    </div>
+                    <h2>Sign Language Recognition System:</h2>
+                </div>
+                <div class="company-history-style1__content">
+                    <div class="top-title">
+                        <h3>How SLR<br> Created</h3>
+                    </div>
+                    <div class="round-box2"></div>
+                    <div class="company-history-style1__content-inner">
+                        <ul class="company-history-box">
+                            <li class="clearfix">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Collect and Prepare Sign Language Data:</h3>
+                                    <p><b>Dataset Collection :</b>Gather image datasets for the sign languages (e.g., ASL, ISL). </p>
+                                    <p><b>Data Preprocessing :</b>Clean and preprocess the dataset by resizing images, augmenting data and splitting it into training, validation, and testing sets.</p>
+                                </div>
+                            </li>
+                            <li class="clearfix style2">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Choose and Develop the AI Model:</h3>
+                                    <p><b>Model Selection:</b> Use deep learning models such as Convolutional Neural Networks (CNNs) for image recognition. .</p>
+                                    <p><b>Model Training:</b> Train the model on your sign language dataset using Python libraries like TensorFlow or Keras.</p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Real-Time Gesture Recognition Implementation</h3>
+                                    <p><b>Use OpenCV: </b>Capture live video streams via webcam using OpenCV.</p>
+                                    <p><b>Integrate AI Model:</b> Apply the trained model to the video frames to detect and classify hand gestures in real time.</p>
+                                </div>
+                            </li>
+                            <li class="clearfix style2">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Text and Speech Conversion</h3>
+                                    <p><b>Convert to Text: </b>Translate recognized gestures into text after classification.</p>
+                                    <p><b>Speech Output: </b>Use text-to-speech libraries (e.g., gTTS) to convert recognized text into spoken words.</p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Develop User Interface</h3>
+                                    <p><b>Design Frontend: </b>Create an user-friendly web or mobile interface for easy interaction using HTML/CSS, JavaScript, and frameworks like Flask.</p>
+                                    <p><b>PDF Export: </b>Create a functionality to export the recognized gestures and their translations as a PDF. Use libraries like FPDF to generate PDF documents with the text output.</p>
+                                </div>
+                            </li>
+                            <li class="clearfix style2">
+                                <div class="inner">
+                                    <div class="round-box"></div>
+                                    <div class="border-box"></div>
+                                    <h3>Testing, Optimization, and Deployment</h3>
+                                    <p><b>Test the System:</b>Perform extensive testing with real users to ensure accuracy, usability, and performance in real-world scenarios.
+                                    </p>
+                                    <p><b>Deploy the System: </b>Host the application on platforms like Heroku, AWS, or PythonAnywhere for public access. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Company History Style1 -->
+
+
+       
+
+       
+
+        <!--Start Slogan Style3-->
+        <section class="slogan-style3">
+            <div class="shape1 wow slideInDown animated" data-wow-delay="00ms" data-wow-duration="3000ms">
+                <img class="float-bob-y" src="assets/images/shapes/slogan-style3-shape1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="slogan-style3__inner">
+                    <div class="slogan-style3__content">
+                        <h2>Welcome to our Sign Language Recognition Project!</h2>
+                        <p>This initiative was developed by a dedicated team of students from the National Skills Training Institute Noida (NSTI). Our project is designed to bridge communication gaps between the deaf and hearing communities through advanced technology.</p>
+                    </div>
+
+                    <div class="slogan-style3__btn">
+                        <a class="btn-one" href="{{ url_for('team') }}">
+                            <span class="txt">
+                                Meet Our Team
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Slogan Style3-->
+
+               
+        {% include "footer.html" %}

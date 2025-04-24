@@ -1,0 +1,159 @@
+/*** 
+=============================================
+    Fact Counter style1 Css
+=============================================
+***/
+.fact-counter-style1 {
+    position: relative;
+    display: block;
+    padding: 0px 0px 0px;
+    margin-bottom: -115px;
+    z-index: 10;
+}
+
+.fact-counter-style1__content {
+    position: relative;
+    display: block;
+}
+
+.fact-counter-style1__content ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.fact-counter-style1__content ul li {
+    position: relative;
+    display: block;
+    float: left;
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+    padding: 0 25px 0;
+    margin-bottom: 30px;
+}
+
+.single-fact-counter {
+    position: relative;
+    display: block;
+}
+
+.single-fact-counter__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--thm-gray-bg);
+    border-radius: 8px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px;
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.single-fact-counter:hover .single-fact-counter__inner {
+    border-radius: 80px;
+}
+
+.single-fact-counter .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.single-fact-counter .icon .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--thm-base);
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.single-fact-counter:hover .icon .inner {
+    background-color: var(--thm-black);
+}
+
+.single-fact-counter .icon .inner span {
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+
+.single-fact-counter .icon .inner span::before {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 60px;
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+}
+
+.single-fact-counter:hover .icon .inner span::before {
+    transform: scale(0.9);
+}
+
+.single-fact-counter .outer-box {
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.single-fact-counter .count-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--thm-black);
+    font-size: 62px;
+    line-height: 0.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: var(--thm-font);
+}
+
+.single-fact-counter .count-box span {
+    position: relative;
+    display: block;
+    line-height: 0.8em;
+}
+
+.single-fact-counter .count-box i {
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.single-fact-counter .title {
+    position: relative;
+    display: block;
+    padding-top: 16px;
+}
+
+.single-fact-counter .title h6 {
+    color: var(--thm-gray);
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: var(--thm-font);
+}

@@ -1,0 +1,287 @@
+{% include "header.html" %}
+
+
+        <!--Start breadcrumb Style1-->
+        <section class="breadcrumb-style1">
+            <div class="breadcrumb-style1-bg" style="background-image: url('https://i.postimg.cc/J00yJ04C/con.webp');">
+
+            </div>
+            <div class="container">
+                <div class="inner-content">
+                    <div class="title">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="breadcrumb-menu">
+                        <ul class="clearfix">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li class="active">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End breadcrumb Style1-->
+
+        <!--Start Contact Info Style1-->
+        <section class="contact-info-style1">
+            <div class="container">
+                <div class="contact-info-style1__inner">
+                    <ul>
+                        <li>
+                            <div class="icon-box">
+                                <span class="icon-phone1"></span>
+                            </div>
+                            <div class="content-box">
+                                <p>Phone Number</p>
+                                <h4><a href="tel:12340009874">+91 8171980496</a></h4>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icon-box">
+                                <span class="icon-envelop"></span>
+                            </div>
+                            <div class="content-box">
+                                <p>Email Address</p>
+                                <h4><a href="mailto:yourmail@email.com">signsensesquad@gmail.com</a></h4>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="icon-box">
+                                <span class="icon-home"></span>
+                            </div>
+                            <div class="content-box">
+                                <p>Address</p>
+                                <h4>NSTI Noida UttarPradesh, India</h4>
+                            </div>
+                        </li>
+
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Contact Info Style1-->
+
+        <!--Start Main Contact Form Area-->
+        <section class="main-contact-form-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-5 col-lg-12">
+                        <div class="contact-page__contact-info">
+                            <div class="sec-title title-anim">
+                                <div class="sub-title">
+                                    <h4>Contact With Us</h4>
+                                </div>
+                                <h2>Give Feedback</h2>
+                            </div>
+                            <div class="text">
+                                <p>We'd love to hear from you! Please feel free to reach out with any questions, feedback, or suggestions. You can contact us via:</p>
+                            </div>
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=61563542382723"><span class="icon-facebook-app-symbol"></span></a></li>
+                                    <li><a href="https://www.instagram.com/signsensesquad/"><span class="icon-instagram"></span></a></li>
+                                    <li><a href="https://x.com/signsensesquad"><span class="icon-twitter"></span></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-7 col-lg-12">
+                        <div class="contact-form">
+                            <form id="contact-form" method="POST" action="/send_feedback">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text" name="form_name" id="formName" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="email" name="form_email" id="formEmail" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text" name="form_phone" id="formPhone" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="form-group">
+                                            <input type="text" name="form_subject" id="formSubject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <textarea name="form_message" id="formMessage" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="form-group">
+                                            <button class="btn-one" type="submit">
+                                                <span class="txt">Submit Now</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--End Main Contact Form Area-->
+        <!-- code for flash message start-->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+      <!-- code for flash message end-->
+        <!--Start Google map 1-->
+        <section class="google-map1">
+            <div class="container-fluid">
+                <div class="contact-page-map-outer-box">
+                    <!--Google Map Start-->
+                    <div class="google-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14013.256972160563!2d77.3115001!3d28.5903482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4f48ccfdc81%3A0x23b82756bfac9089!2sNational%20Skill%20Training%20Institute%20for%20Women!5e0!3m2!1sen!2sin!4v1726726072107!5m2!1sen!2sin" 
+                            class="google-map__one" allowfullscreen></iframe>
+                    </div>
+                    <!--Google Map End-->
+                </div>
+            </div>
+        </section>
+        <!--Start Google map 1-->
+
+       <!--Start footer Style1 -->
+       <footer class="footer-style1">
+        <!--Start Footer Main-->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <!--Start Single Footer Widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 single-widget fade_bottom">
+                        <div class="single-footer-widget marbtm">
+                            <div class="our-company-info">
+                                <div class="footer-logo-style1">
+                                    <a href="index.html">
+                                        <img src="{{ url_for('static', filename='assets/images/home/slr.png') }}" alt="" title="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <p>"Bridging Communication Gaps Through AI-Powered Sign Language Recognition" <br>Project aimed to bridge communication gaps between the deaf community and the hearing population</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Footer Widget-->
+
+                    <!--Start Single Footer Widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 single-widget fade_bottom">
+                        <div class="single-footer-widget margin-left marbtm single-footer-widget--link-box">
+                            <div class="title">
+                                <h3>Links</h3>
+                            </div>
+                            <div class="footer-widget-links">
+                                <ul>
+                                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                                    <li><a href="{{ url_for('about') }}">About</a></li>
+                                    <li><a href="{{ url_for('Projects') }}">Projects</a></li>
+                                    <li><a href="{{ url_for('team') }}">Team</a></li>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Footer Widget-->
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 single-widget fade_bottom">
+                        <div class="single-footer-widget margin-left-minus single-footer-widget--link-box">
+                            <div class="title">
+                                <h3>contact us</h3>
+                            </div>
+                            <div class="single-footer-widget__box-inner">
+                                <div class="footer-widget-contact-info">
+                                    <ul>
+                                        <li>NSTI Noida UttarPradesh</li>
+                                        <li><a href="mailto:signsensesquad@gmail.com">signsensesquad@gmail.com</a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="footer-social-link">
+                                    <ul class="clearfix">
+                                        <li>
+                                            <a href="https://x.com/signsensesquad">
+                                                <i class="icon-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/profile.php?id=61563542382723">
+                                                <i class="icon-facebook-app-symbol"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/signsensesquad/">
+                                                <i class="icon-instagram"></i>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                    <!--Start single footer widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 fade_bottom">
+                        <div class="single-footer-widget martop">
+                            <div class="title">
+                                <h3>Let's Talk With Sign</h3>
+                            </div>
+                            <div class="footer-widget-newsletter-box">
+                                <p>clcik on this to talk with sign</p>
+                                
+                                <div class="main-menu-style1__right">
+                                    <div class="header-btn-style1">
+                                        <a class="btn-one" href="about.html">
+                                            <span class="txt">
+                                               Let's Talk With Sign
+                                            </span>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+                </div>
+            </div>
+        </div>
+        <!--End Footer Main-->
+
+{% include "footer.html" %}

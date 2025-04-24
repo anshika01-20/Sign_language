@@ -1,0 +1,104 @@
+{% include "header.html" %}
+
+
+        <!--Start Project Page One-->
+        <section class="project-page-one">
+            <div class="container">
+                <div class="sec-title text-center">
+                    
+                    <h2>Let's get Started
+                    </h2>
+                    <p>Sign language is a visual language using hand gestures, facial expressions, and body movements for communication, mainly used by deaf and hard-of-hearing people.</p>
+                </div>
+                <div class="row masonry-items-container">
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-6 col-lg-6 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='images/home/isl.jpg') }}" alt="Python">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="https://isl-10re.onrender.com" target="_blank">Indian Sign Language</a></h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-6 col-lg-6 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='images/home/abc.jpg') }}" alt="TensorFlow & Keras">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="{{ url_for('sign') }}">American SIgn Language</a></h4>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    
+                </div>
+
+               
+        <!--End Project Page One-->
+
+       
+<!-- /.page-wrapper -->
+
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler">
+            <i class="fa fa-times-circle"></i>
+        </span>
+        <div class="logo-box">
+            <a href="{{ url_for('home') }}" aria-label="logo image">
+                <img src="{{ url_for('static', filename='images/resources/mobile-nav-logo.png') }}" alt="" />
+            </a>
+        </div>
+
+        <div class="mobile-nav__container"></div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/countdown/jquery.countdown.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/fancybox/jquery.fancybox.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/isotope/isotope.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jarallax/jarallax.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/nice-select/jquery.nice-select.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/odometer/odometer.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/swiper/swiper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/wow/wow.js') }}"></script>
+<!-- Gsap JS files -->
+<script src="{{ url_for('static', filename='vendors/gsap/gsap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/gsap/scrollSmoother.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/gsap/scrollToPlugin.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/gsap/scrollTrigger.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/gsap/splitText.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/gsap/gsap-scrips.js') }}"></script>
+
+<script src="{{ url_for('static', filename='vendors/extra-scripts/extra-scripts.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/extra-scripts/color-switcher.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/marquee/marquee.min.js') }}"></script>
+
+<!-- Template js -->
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+
+</html>

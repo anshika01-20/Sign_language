@@ -1,0 +1,111 @@
+{% include "header.html" %}
+
+
+
+        <!--Start breadcrumb Style1-->
+        <section class="breadcrumb-style1">
+            <div class="breadcrumb-style1-bg" style="background-image: url('{{ url_for('static', filename='assets/images/home/teamd.jpg') }}');">
+            </div>
+            <div class="container">
+                <div class="inner-content">
+                    <div class="title">
+                        <h2>Team Members</h2>
+                    </div>
+                    <div class="breadcrumb-menu">
+                        <ul class="clearfix">
+                            <li><a href="{{ url_for('about') }}">About us</a></li>
+                            <li class="active">Team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End breadcrumb Style1-->
+
+
+
+        <!--Start Team Page One-->
+        <section class="team-page-one team_animation">
+            <div class="container">
+
+                <div class="row">
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 team__anim">
+                        <div class="single-team-style1">
+                            <div class="img-box">
+                                <div class="inner">
+                                    <img src="{{ url_for('static', filename='assets/images/home/Anshika.png') }}" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="title-box text-center">
+                                <h2><a href="{{ url_for('anshika') }}">Anshika Patel</a></h2>
+                                <p>Team Leader</p>
+                                <p>Model Development & Integration and Testing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 team__anim">
+                        <div class="single-team-style1">
+                            <div class="img-box">
+                                <div class="inner">
+                                    <img src="{{ url_for('static', filename='assets/images/home/Arvinder.png') }}" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="title-box text-center">
+                                <h2><a href="{{ url_for('arvinder') }}">Arvinder Singh</a></h2>
+                                <p>Team Member</p>
+                                <p>Data Collection and Preprocessing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 team__anim">
+                        <div class="single-team-style1">
+                            <div class="img-box">
+                                <div class="inner">
+                                    <img src="{{ url_for('static', filename='assets/images/home/jass.png') }}" alt="">
+                                </div>
+                                
+                            </div>
+                            <div class="title-box text-center">
+                                <h2><a href="{{ url_for('jasspreet') }}">Jaspreet Kaur Gill</a></h2>
+                                <p>Team Member</p>
+                                <p>Frontend and UI Design
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+                    <!--Start Single Team Style1-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 team__anim">
+                        <div class="single-team-style1">
+                            <div class="img-box">
+                                <div class="inner">
+                                    <img src="{{ url_for('static', filename='assets/images/home/Tushar.png') }}" alt="">
+                                </div>
+                               
+                            </div>
+                            <div class="title-box text-center">
+                                <h2><a href="{{ url_for('tushar') }}">TUSHAR</a></h2>
+                                <p>Team Member</p>
+                                <p>Frontend and UI Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Style1-->
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End team page -->
+       
+
+
+            
+        {% include "footer.html" %}

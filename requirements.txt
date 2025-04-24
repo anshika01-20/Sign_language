@@ -1,0 +1,17 @@
+﻿Flask                   
+opencv-python            
+mediapipe              
+numpy                  
+fpdf                     
+pyttsx3                   
+tensorflow             
+keras                 
+gunicorn                
+Pillow                
+scikit-learn             
+imutils                  
+pandas                  
+matplotlib             
+Flask-Cors            
+
+flask_mail

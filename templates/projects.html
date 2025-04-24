@@ -1,0 +1,181 @@
+{% include "header.html" %}
+        <!--Start breadcrumb Style1-->
+        <section class="breadcrumb-style1">
+            <div class="breadcrumb-style1-bg" style="background-image: url('{{ url_for('static', filename='assets/images/home/main.jpg') }}');">
+            </div>
+            <div class="container">
+                <div class="inner-content">
+                    <div class="title">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="breadcrumb-menu">
+                        <ul class="clearfix">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li class="active">Projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End breadcrumb Style1-->
+
+        <!--Start Project Page One-->
+        <section class="project-page-one">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <div class="sub-title">
+                        <h4>Technology Stack & Requirements
+                        </h4>
+                    </div>
+                    <h2>Technology Used:
+                    </h2>
+                </div>
+                <div class="row masonry-items-container">
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-3 col-lg-3 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='assets/images/home/python.jpg') }}" alt="Python">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">Python</a></h4>
+                                    <p>Python is used as the core programming language due to its rich ecosystem of libraries for AI and machine learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-6 col-lg-6 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='assets/images/home/tk.jpg') }}" alt="TensorFlow & Keras">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">TensorFlow & Keras</a></h4>
+                                    <p>These are used for training and deploying the machine learning model that recognizes sign language gestures.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-3 col-lg-3 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='assets/images/home/open.png') }}" alt="OpenCV">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">OpenCV</a></h4>
+                                    <p>OpenCV is essential for image processing and capturing hand gestures through a webcam or camera.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-6 col-lg-6 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='images/home/hard.png') }}" alt="">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">Hardware & Software Requirements:
+                                    </a></h4>
+                                    <p>Hardware:
+                                        Camera/Webcam: For capturing hand movements and gestures. <br>
+                                        Standard PC/Laptop: A machine with at least 8GB RAM, a multi-core processor, and a dedicated GPU (optional for faster model training).
+                                        <br>
+                                        Software:
+                                        Operating System: Linux, Windows, or macOS. <br>
+                                        Python 3.14.0: The main programming environment. <br>
+                                        Libraries: TensorFlow, Keras, OpenCV, Numpy, Flask. <br>
+                                        IDE: VSCode for development
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-3 col-lg-3 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='assets/images/home/numpy.png') }}" alt="NumPy">
+                                <div class="img-holder-img-bg"></div>
+                                <div class="overlay-button">
+                                    
+                                </div>
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">Numpy</a></h4>
+                                    <p>For handling data processing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                    <!--Start Single Project Style1-->
+                    <div class="col-xl-3 col-lg-3 masonry-item gallery-item">
+                        <div class="single-project-item">
+                            <div class="img-holder">
+                                <img src="{{ url_for('static', filename='assets/images/home/flask.jpg') }}" alt="Flask">
+                                <div class="img-holder-img-bg"></div>
+                                
+                                <div class="overlay-title">
+                                    <h4><a href="projects-details.html">Flask</a></h4>
+                                    <p>For building a web interface to allow users to interact with the system via a website.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Project Style1-->
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-page-one__btn text-center">
+                            <a class="btn-one" href="{{ url_for('details') }}">
+                                <span class="txt">
+                                    Get project Report
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End Project Page One-->
+
+        <!--Start Slogan Style3-->
+        <section class="slogan-style3">
+            <div class="shape1 wow slideInDown animated" data-wow-delay="00ms" data-wow-duration="3000ms">
+                <img class="float-bob-y" src="assets/images/shapes/slogan-style3-shape1.png" alt="">
+            </div>
+            <div class="container">
+                <div class="slogan-style3__inner">
+                    <div class="slogan-style3__content">
+                        <h2>Get the project Code</h2>
+                    </div>
+
+                    <div class="slogan-style3__btn">
+                        <a class="btn-one" href="about.html">
+                            <span class="txt">
+                                Github link
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Slogan Style3-->
+
+        {% include "footer.html" %}

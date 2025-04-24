@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Recognition System</title>
+    <!-- Favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicons/apple-touch-icon.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicons/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicons/favicon-16x16.png') }}" />
+    <meta name="description" content="ClaiMax HTML 5 Template " />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/animate/custom-animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/aos/aos.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/fancybox/fancybox.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/jarallax/jarallax.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/jquery-ui/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/nice-select/nice-select.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/odometer/odometer.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/owl-carousel/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/swiper/swiper.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/thm-icons/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/recoleta-fonts/stylesheet.css') }}" />
+    <!-- Module CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/01-header-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/02-banner-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/03-about-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/04-fact-counter-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/05-testimonial-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/06-partner-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/07-footer-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/08-blog-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/09-breadcrumb-section.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/10-contact.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/module-css/11-services-section.css') }}" />
+
+    <!-- Template styles -->
+    <link href="{{ url_for('static', filename='css/color/theme-color.css') }}" id="jssDefault" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="loader-wrap">
+        <div class="preloader">
+            <div id="handle-preloader" class="handle-preloader">
+                <div class="layer layer-one">
+                    <span class="overlay"></span>
+                </div>
+                <div class="layer layer-three">
+                    <span class="overlay"></span>
+                </div>
+                <div class="layer layer-two">
+                    <span class="overlay"></span>
+                </div>
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Start sidebar widget content -->
+    <div class="xs-sidebar-group info-group info-sidebar">
+        <div class="xs-overlay xs-bg-black"></div>
+        <div class="xs-sidebar-widget">
+            <div class="sidebar-widget-container">
+                <div class="widget-heading">
+                    <a href="#" class="close-side-widget">X</a>
+                </div>
+                <div class="sidebar-textwidget">
+                    <div class="sidebar-info-contents">
+                        <div class="content-inner">
+                            <div class="logo">
+                                <a href="{{ url_for('home') }}">
+                                    <img src="Slr.svg" alt="Logo" />
+                                </a>
+                            </div>
+                            <div class="content-box">
+                                <h3>Welcome to our Sign<br> Language Recognition System</h3>
+                                <div class="inner-text">
+                                    <p>
+                                        We’ve created a Sign Language Recognition System. The goal of this project is to help bridge the communication gap between individuals who use sign language and those who don’t.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End sidebar widget content -->
+
+    <div class="page-wrapper boxed_wrapper">
+        <header class="main-header main-header-style1">
+            <!--Start Main Menu Style1-->
+            <nav class="main-menu main-menu-style1">
+                <div class="main-menu__wrapper clearfix">
+                    <div class="container">
+                        <div class="main-menu__wrapper-inner">
+                            <div class="main-menu-style1__left">
+                                <div class="main-menu-box">
+                                    <a href="#" class="mobile-nav__toggler">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                    <ul class="main-menu__list">
+                                        <li>
+                                            <a href="{{ url_for('home') }}">
+                                                <img src="{{ url_for('static', filename='images/home/slr.png') }}" alt="Awesome Logo" title="" style="height: 80px;" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('home') }}">Home</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="{{ url_for('about') }}">About Us</a>
+                                            <ul>
+                                                <li><a href="{{ url_for('about') }}">About our Project</a></li>
+                                                <li><a href="{{ url_for('team') }}">Our Team Members</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="{{ url_for('Projects') }}">Project</a>
+                                            <ul>
+                                                <li><a href="{{ url_for('Projects') }}">Technology & Stack</a></li>
+                                                <li><a href="{{ url_for('details') }}">Project Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="{{ url_for('contact') }}">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-menu-style1__right">
+                                <div class="header-btn-style1">
+                                    <a class="btn-one" href="{{ url_for('isl') }}">
+                                        <span class="txt">
+                                            Let's Talk With Sign
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="side-content-button">
+                                    <a class="navSidebar-button" href="#">
+                                        <span class="line"></span>
+                                        <span class="line two"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--End Main Menu Style1-->
+        </header>
+        <div class="stricky-header stricky-header--style1 stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+            <!-- /.sticky-header__content -->
+        </div>
+        <!-- /.stricky-header -->
+    </div>

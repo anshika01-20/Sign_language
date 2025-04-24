@@ -1,0 +1,117 @@
+/*** 
+=============================================
+    Breadcrumb style1
+=============================================
+***/
+.breadcrumb-style1 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 110px 0 114px;
+    z-index: 10;
+}
+
+.breadcrumb-style1-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.breadcrumb-style1-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.70) 21.78%, rgba(0, 0, 0, 0.00) 78.41%);
+}
+
+
+.breadcrumb-style1 .inner-content {
+    position: relative;
+    display: block;
+}
+
+.breadcrumb-style1 .title {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.breadcrumb-style1 .title h2 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.breadcrumb-menu {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-top: 23px;
+    z-index: 1;
+}
+
+.breadcrumb-menu ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.breadcrumb-menu ul li {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 18px;
+    margin-right: 10px;
+    letter-spacing: 0.09em;
+    font-family: var(--thm-font);
+}
+
+.breadcrumb-menu ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    bottom: 6px;
+    width: 9px;
+    height: 9px;
+    border: 2px solid var(--thm-base);
+    border-radius: 50%;
+}
+
+.breadcrumb-menu ul li:last-child:before {
+    display: none;
+}
+
+.breadcrumb-menu ul li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.breadcrumb-menu ul li a {
+    color: #FFFFFF;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.breadcrumb-menu ul li:hover a,
+.breadcrumb-menu ul li.active {
+    color: var(--thm-base);
+}
