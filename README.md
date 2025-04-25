@@ -1,53 +1,69 @@
-Hand Gesture Recognition System
+Sign Language Recognition System
+A real-time hand gesture recognition system utilizing computer vision and machine learning to identify and classify hand gestures, facilitating communication for individuals with speech impairments.​
+Overview
+This project encompasses the following components:​
+Data Collection: Captures images of hand gestures via webcam.
+Data Preprocessing: Processes collected images and extracts features using MediaPipe.
+Model Training: Trains a machine learning model on the preprocessed data.
+Real-time Recognition: Implements real-time hand gesture recognition using the trained model.​
+Features
+Real-time hand gesture recognition using webcam input.
+Utilizes MediaPipe for efficient hand landmark detection.
+Custom dataset creation for training purposes.
+Modular code structure for ease of understanding and maintenance.​
 
-Overview:
-This project is a hand gesture recognition system that uses computer vision and machine learning to recognize and classify hand gestures. The system consists of four main components:
+Installation
+Clone the repository:
+git clone https://github.com/anshika01-20/Sign_language.git
+cd Sign_language
+Create a virtual environment (optional but recommended):
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install the required packages:
+pip install -r requirements.txt
+Usage
+1. Data Collection
+To collect images for different hand gestures:​
+python collect_imgs.py
+Follow the on-screen instructions to capture images for each gesture category.​
 
-1. Data Collection: A script to collect images of hand gestures using a webcam.
-2. Data Preprocessing: A script to preprocess the collected images and extract features using MediaPipe.
-3. Model Training: A script to train a machine learning model using the preprocessed data.
-4. Real-time Recognition: A script to recognize hand gestures in real-time using the trained model.
+2. Dataset Creation
+Process the collected images and extract features:​
+python create_dataset.py
+This will generate a data.pickle file containing the processed data.​
 
+3. Model Training
+Train the machine learning model using the processed dataset:​
+python train_classifier.py
+The trained model will be saved as model.p.​
+4. Real-time Recognition
+Run the application to start real-time hand gesture recognition:​
+python final.py
+Ensure your webcam is connected and functioning properly.​
+Project Structure
+plaintext
 
-Getting Started
+Sign_language/
+├── data/                  # Collected images for each gesture
+├── static/                # Static files for the web interface (if any)
+├── templates/             # HTML templates for the web interface (if any)
+├── app.py                 # Flask application (if applicable)
+├── collect_imgs.py        # Script for collecting gesture images
+├── create_dataset.py      # Script for creating the dataset
+├── train_classifier.py    # Script for training the model
+├── final.py               # Main script for real-time recognition
+├── model.p                # Trained model file
+├── data.pickle            # Processed dataset
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+└── .gitignore             # Files to ignore in version control
 
-Prerequisites:
-Python 3.x
+Dependencies
+The project relies on the following Python packages:​
 OpenCV
 MediaPipe
-scikit-learn
+NumPy
+Flask (if using the web interface)
+Pickle​
+Ensure all dependencies are installed via pip install -r requirements.txt.​
 
-
-Installation:
-Install the required packages: pip install -r requirements.txt
-Running the System
-Step 1: Collect data: python collect_imgs.py
-Step 2: Preprocess data: python create_dataset.py
-Step 3: Train the model: python train_classifier.py
-Step 4: Run the real-time recognition: python final.py
-
-Scripts
-collect_imgs.py
-This script collects images of hand gestures using a webcam. It creates a directory for each class (e.g. A, B, C, etc.) and saves the images in the corresponding directory.
-
-create_dataset.py
-This script preprocesses the collected images and extracts features using MediaPipe. It creates a pickle file containing the preprocessed data and labels.
-
-train_classifier.py
-This script trains a machine learning model using the preprocessed data. It saves the trained model to a pickle file.
-
-final.py
-This script recognizes hand gestures in real-time using the trained model. It displays the recognized gesture on the screen.
-
-
-Acknowledgments
-This project uses the following libraries and frameworks:
-
-OpenCV
-MediaPipe
-scikit-learn
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-Issues
-If you encounter any issues or have questions, please open an issue on the GitHub repository.
